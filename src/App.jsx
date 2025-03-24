@@ -23,7 +23,7 @@ export default function App() {
         <div className="sub-header">
           <h3>Nisan Raporu</h3>
         </div>
-        <div>
+        <div className="flex flex-wrap justify-center">
           {diaryData.map((data) => {
             return <DiaryCard data={data} key={data.id} />;
           })}
